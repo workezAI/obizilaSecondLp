@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", serif;
+
+}
+.nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 64px;
+    z-index: 10;
+    user-select: none;
+    margin-bottom: 70px;
+  }
+  
+  .nav-itens{
+    width: 100%;
+    padding: 0px 30px;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #navLogo{
+    width: 130px;
+  }
+  @media screen and (max-width: 868px){
+    #navLogo{
+      width: 100px;
+    }
+    
+  }
+  
+  .plans{
+    display: flex;
+    color: white;
+    gap: 25px;
+    align-items: center;
+    justify-self: center;
+    font-weight: 500;
+  }
+  img{
+    cursor: pointer;
+  }
+  button{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color: white;
+    height: 30px;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: 0px;
+    font-size: 12px;
+    cursor: pointer;
+
+  }
+  p{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  @media screen and (max-width: 868px){
+    p{
+      font-size: 12px;
+    }
+    
+  }
+  #navSettings{
+    width: 18px;
+  }
+  
+  @media (max-width: 1200px) {
+    .dashboard-route .plans {
+      display: none;
+    }
+  }
+  
+  
+  @media screen and (max-width: 868px){
+    .nav-itens{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .nav{
+      height: 100px;
+    }
+  }
+  .more-people{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    background: linear-gradient(0deg, #333333, #141414);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid #4d4d4d; /* Cor da borda */
+  }
+  .title-ai{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  h1{
+    font-weight: bolder;
+    font-size: 60px;
+    text-align: center;
+    color: white;
+    font-family: "Poppins", serif;
+
+  }
+  @media screen and (max-width: 1000px){
+    h1{
+      font-size: 29px;
+    }
+    P{
+      font-size: 11px;
+    }
+    
+  }
+  .custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #0059ff, #0033cc); /* Gradiente azul */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s;
+    width: 15%;
+    height: 45px;
+}
+@media screen and (max-width: 1000px){
+  .custom-button{
+    width: 70%;
+    font-size: 12px;
+    height: 38px;
+  }
+  
+}
+
+.custom-button:hover {
+    transform: scale(1.05);
+}

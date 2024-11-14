@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>Obizilla</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./navbar.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/obizilla favicon 1.png" type="image/x-icon">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  </head>
+  
+  <body >
+    <div class="nav">
+      <div class="nav-itens">
+        <img
+          id="navLogo"
+          src="./assets/obizilla logo 1 (3).png"
+          alt=""
+          style="cursor: pointer"
+        />
+    
+        <div class="plans">
+          <p >Planos</p>
+          <button ><strong>Log in</strong> </button>
+        </div>
+      </div>
+    </div>
+    <div class="more-people">
+      <img src="./assets/personicon.png" alt="">
+      <p> Somos confiados por mais de 930 usuários.</p>
+    </div>
+    <div class="title-ai">
+      <h1>Chat de IA Anônimo,<br> Sem Filtros, Sem <br> Censura.</h1>
+      <p>O único modelo de IA que permite seus pensamentos, do seu jeito, <br> sem limites, registros, bloqueios, sem exceções.</p>
+      <button class="custom-button">
+        👋 Diga olá para o Obizilla
+    </button>
+    <p>
+      Nenhum pagamento necessário.
+    </p>
+    </div>
+  
+<div class="background">
+
+    <div id="secondOverflow">
+ 
+    </div>
+    <div id="firstOverflow">
+      <img src="./assets/obizillalogo.png" class="chat-png">
+      <h5> IA Privada e sem restrições      </h5>
+    </div>
+    <section id="viewerSection" >
+      <div class="container">
+        <!-- Área do chat -->
+        <div id="chatArea" class="chat-area"></div>
+      </div>
+
+      <div class="input-wrapper">
+        <div class="chatinput-container">
+          <textarea
+            id="userInput"
+            placeholder="Pergunte qualquer coisa"
+            rows="1"
+          ></textarea>
+          <svg
+            id="sendButton"
+            width="14"
+            height="13"
+            viewBox="0 0 14 13"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.729248 12.7181L13.7292 6.71814L0.729248 0.71814L0.729248 5.33352L9.39592 6.71814L0.729248 8.10276L0.729248 12.7181Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Funnel Starts  -->
+    <section id="funnelsViewer" class="ghost">
+      <!-- EMAIL -->
+      <div id="collectEmail" class="quizLayout">
+        <div class="cardTitle">
+          <h1 style="font-size: 20px; text-align: start;">Crie uma conta para continuar</h1>
+          <p>Não se preocupe, seus dados são 100% criptografados</p>
+        </div>
+        <div class="form">
+          <div class="input-container">
+            <input
+              id="email"
+              placeholder=""
+              type="email"
+              required
+              class="form-control"
+            />
+            <label for="email">Email*</label>
+          </div>
+          <button class="btn btn-primary" id="collectEmail_button">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!-- EMAIL END -->
+
+      <!-- PASSWORD -->
+      <div id="collectPassword" class="quizLayout" style="display: none">
+        <div class="cardTitle">
+          <h5
+            id="previewEmail"
+            style="font-weight: 500; margin-bottom: 12px; cursor: pointer"
+          >
+            <img src="./assets/backarrow.svg" />
+          </h5>
+          <h1 style="font-size: 20px; text-align: start;">Defina uma senha para continuar</h1>
+        </div>
+        <div class="form">
+          <div class="input-container">
+            <input
+              id="password"
+              placeholder=""
+              type="password"
+              required
+              class="form-control"
+            />
+            <label for="password">Senha*</label>
+          </div>
+          <div class="input-container">
+            <input
+              id="password_confirm"
+              placeholder=""
+              type="password"
+              required
+              class="form-control"
+            />
+            <label for="password_confirm">Confirmar Senha*</label>
+          </div>
+          <button class="btn btn-primary" id="collectPassword_button">
+            Continue
+          </button>
+        </div>
+      </div>
+      <!-- PASSWORD END -->
+
+      <!-- PLANS -->
+      <div id="offerPlans" class="quizLayout" style="display: none">
+        <div class="cardTitle">
+          <h1>Escolha seu plano</h1>
+        </div>
+        
+        <div class="plans">
+
+          <div class="flex-plans">
+            <div class="container-planos">
+              <div class="container-planos-text">
+                <div class="planos-maininfo">
+                  <h2>Basic</h2>
+                  <p>
+                    Tudo o que você precisa para começar com uma IA poderosa e
+                    sem censura.
+                  </p>
+                </div>
+                <div class="plans-featbenf">
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (4).png" alt="" />
+                    <p>Interações 100% anônimas</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (5).png" alt="" />
+                    <p>Respostas poderosas sem censura</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (6).png" alt="" />
+                    <p>10 prompts / dia</p>
+                  </div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="value-flex">
+                  <p>R$ <strong class="size">39,90</strong></p>
+                  <p>mensalmente</p>
+                </div>
+                <button
+                id="basicPlan"
+                  class="plansSubscribe pSub-white"
+                >
+                  Assinar
+                </button>
+
+              </div>
+            </div>
+            <div class="container-planos planoDestaque">
+              <div class="container-planos-text">
+                <div class="planos-maininfo">
+                  <h2>Gold</h2>
+                  <p>
+                    Ideal para usuários frequentes que precisam de mais dados e
+                    flexibilidade.
+                  </p>
+                </div>
+                <div class="plans-featbenf">
+                  <p>Tudo do Basic +</p>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (6).png" alt="" />
+                    <p>100 prompts / dia</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Clip path group.png" alt="" />
+                    <p>Consulta de dados CPF, Placas</p>
+                  </div>
+                  <div class="icon-flex">
+                    <img src="./assets/Vector (7).png" alt="" />
+                    <p>Suporte prioritário</p>
+                  </div>
+                </div>
+              </div>
+              <div class="value">
+                <div class="value-flex">
+                  <p>R$ <strong class="size">89,90</strong></p>
+                  <p>mensalmente</p>
+                </div>
+                <button
+                id="goldPlan"
+                  class="plansSubscribe pSub-highlight"
+                >
+                  Assinar
+                </button>
+
+              </div>
+            </div>
+          
+
+        </div>
+      </div>
+      <!-- PLANS END -->
+    </section>
+
+    <script src="script.js"></script>
+
+<script src="funnel.js"></script>
+
+</div>
+<div class="ghosts"></div>
+<div class="questions-blue">
+<p class="p-blue">Como pagar menos impostos</p>
+<p class="p-blue">Como funciona um esquema de pirâmide?</p>
+<p class="p-blue">Como fazer dinheiro rápido e fácil?</p>
+</div>
+
+<div class="tools-container-main">
+  <h1 class="tools-title">Ferramentas</h1>
+
+  <div class="tools-container">
+      <div class="tool-card">
+          <div class="tool-icon">
+             <img src="./assets/pessoaazul.png" alt="">
+          </div>
+          <h3>Nós não salvamos conversas</h3>
+          <p>Suas interações são apagadas após serem recebidas.</p>
+      </div>
+      <div class="tool-card">
+          <div class="tool-icon">
+            <img src="./assets/escudoazul.png" alt="">
+
+          </div>
+          <h3>Nós criptografamos todas as conversas</h3>
+          <p>Todas as comunicações são criptografadas de forma segura. Utilizando técnicas de criptografia AES.</p>
+      </div>
+      <div class="tool-card">
+          <div class="tool-icon">
+            <img src="./assets/nuvemazul.png" alt="">
+
+          </div>
+          <h3>Local na Nuvem</h3>
+          <p>Nosso modelo opera sem "consultas na internet", então suas perguntas não são expostas fora da nossa rede, garantindo privacidade.</p>
+      </div>
+      <div class="tool-card">
+          <div class="tool-icon">
+            <img src="./assets/altofalanteazul.png" alt="">
+
+          </div>
+          <h3>Sem Filtragem / Sem Censura</h3>
+          <p>Nosso modelo opera utilizando milhões de pontos de dados de fóruns, quadros de ajuda, conteúdo de sites, etc.</p>
+      </div>
+      <div class="tool-card">
+          <div class="tool-icon">
+            <img src="./assets/language.svg.png" alt="">
+
+          </div>
+          <h3>Multilingual</h3>
+          <p>Agora com suporte para cirílico e devanágari, chinês (Hanzi), hangul, grego, hebraico, japonês kana (Hiragana, Katakana), tailandês e árabe.</p>
+      </div>
+  </div>
+</div>
+<div class="development-container-main">
+
+<div class="development-container">
+  <h2 class="development-title">
+      <img src="./assets/features-icon.svg.png" alt=""> Ferramentas em Desenvolvimento
+  </h2>
+  <div class="development-tools">
+      <div class="tool-item">
+          <img src="./assets/SealCheckWhite.svg.png" alt=""> Pesquisa Internet em tempo real
+      </div>
+      <div class="tool-item">
+          <img src="./assets/SealCheckWhite.svg.png" alt=""> Análise de Imagem
+      </div>
+      <div class="tool-item">
+          <img src="./assets/SealCheckWhite.svg.png" alt=""> Agentes de IA
+      </div>
+      <div class="tool-item">
+          <img src="./assets/SealCheckWhite.svg.png" alt=""> Geração de Imagem
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="plans-container-main">
+  <h1 class="plans-title">Planos</h1>
+
+  <div class="plans-container">
+    <div class="container-planos">
+      <div class="container-planos-text">
+        <div class="planos-maininfo">
+          <h2>Basic</h2>
+          <p>Tudo o que você precisa para começar com uma IA poderosa e sem censura.</p>
+        </div>
+        <div class="plans-featbenf">
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Vector (4).png" alt="">
+            <p>Interações 100% anônimas</p>
+          </div>
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Vector (5).png" alt="">
+            <p>Respostas poderosas sem censura</p>
+          </div>
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Vector (6).png" alt="">
+            <p>5 prompts / dia</p>
+          </div>
+        </div>
+      </div>
+      <div class="value">
+        <div class="value-flex">
+          <p>R$ <strong class="size">39,90</strong></p>
+          <p>mensalmente</p>
+        </div>
+        <button class="plansSubscribe pSub-white"  >Assinar</button>
+
+  </div>
+    </div>
+    <div class="container-planos planoDestaque">
+      <div class="container-planos-text">
+        <div class="planos-maininfo">
+          <h2>Gold</h2>
+          <p>Ideal para usuários frequentes que precisam de mais dados e flexibilidade.</p>
+        </div>
+        <div class="plans-featbenf">
+          <p>Tudo do Basic +</p>
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Vector (6).png" alt="">
+            <p>100 prompts / dia</p>
+          </div>
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Clip path group.png" alt="">
+            <p>Consulta de dados CPF, Placas</p>
+          </div>
+          <div class="icon-flex">
+            <img src="../../../../assets/icons/Vector (7).png" alt="">
+            <p>Suporte prioritário</p>
+          </div>
+        </div>
+      </div>
+      <div class="value">
+        <div class="value-flex">
+          <p>R$ <strong class="size">89,90</strong></p>
+          <p>mensalmente</p>
+        </div>
+        <button class="plansSubscribe pSub-highlight">Assinar</button>
+      </div>
+    </div>
+      <div class="container-planos">
+        <div class="container-planos-text">
+          <div class="planos-maininfo">
+            <h2>Affiliate</h2>
+            <p>Faça dinheiro com nossa IA, se torne um afiliado do Obizilla.</p>
+          </div>
+          <div class="plans-featbenf">
+            <p>Tudo do Gold +</p>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (4).png" alt="">
+              <p>Prompts ilimitados</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (5).png" alt="">
+              <p>Acesso a comercialização do Obizilla</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (6).png" alt="">
+              <p>50% Revenue Share</p>
+            </div>
+          </div>
+        </div>
+        <div class="value">
+          <button class="plansSubscribe pSub-black">Aplicar</button>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="faq-container-main">
+  <h1 class="faq-title">Perguntas Frequentes</h1>
+
+  <div class="faq-item">
+      <button class="faq-question">Quantas mensagens eu recebo gratuitamente em uma conta normal? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Você recebe um número limitado de mensagens gratuitas por mês em uma conta normal.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">Se eu precisar de suporte, como faço para entrar em contato com vocês? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Nosso suporte está disponível através do e-mail ou chat ao vivo no site.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">Que tipo de modelo vocês estão usando? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Estamos usando um modelo de linguagem avançado desenvolvido para conversas naturais.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">O que uma conta Pro oferece? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Uma conta Pro oferece benefícios adicionais, como mais prompts e acesso prioritário.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">Como ficar atualizado com a equipe do Obizilla? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Para se manter atualizado, você pode seguir nossos canais de comunicação e redes sociais.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">Assinatura sem preocupações / Cancelamentos <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Oferecemos uma política de cancelamento fácil e sem preocupações. Você pode cancelar a qualquer momento.</p>
+      </div>
+  </div>
+
+  <div class="faq-item">
+      <button class="faq-question">Quais são os métodos de pagamento aceitos? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
+      <div class="faq-answer">
+          <p>Aceitamos vários métodos de pagamento, incluindo cartões de crédito e PayPal.</p>
+      </div>
+  </div>
+</div>
+
+<div class="start-card">
+  <div class="start-content">
+      <h2>Começar</h2>
+      <p>Pergunte literalmente o que você quiser</p>
+      <button class="start-button">Começar</button>
+  </div>
+  <div class="start-image-placeholder">
+    <img src="./assets/Frame 50.png" alt="">
+  </div>
+</div>
+<div class="ghosts"></div>
+<footer class="footer-container">
+  <div class="footer-contents-main">
+  <div class="footer-content">
+      <div class="footer-logo-description">
+          <img src="./assets/obizilalogofooter.png" alt="Obizilla Logo" class="footer-logo">
+          <p class="footer-description">A única IA que permite que seus pensamentos, do seu jeito, sem limites, logs, bloqueios, sem exceções.</p>
+      </div>
+      <button class="footer-button">Contato</button>
+  </div>
+  <hr class="footer-divider">
+  <div class="footer-links">
+      <p>Obizilla</p>
+      <a href="#">Termos de Serviço</a>
+      <a href="#">Política de Privacidade</a>
+  </div>
+  <hr class="footer-divider">
+</div>
+</footer>
+
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+</html>
