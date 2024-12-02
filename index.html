@@ -31,8 +31,8 @@
         />
     
         <div class="plans">
-          <p >Planos</p>
-          <button ><strong>Log in</strong> </button>
+          <p id="planosButton" style="cursor: pointer;">Planos</p>
+          <button><strong>Log in</strong></button>
         </div>
       </div>
     </div>
@@ -161,8 +161,7 @@
           <h1>Escolha seu plano</h1>
         </div>
         
-        <div class="plans">
-
+        <div class="plans" id="funnelsPlanSection">
           <div class="flex-plans">
             <div class="container-planos">
               <div class="container-planos-text">
@@ -189,14 +188,13 @@
                 </div>
               </div>
               <div class="value">
-                <div class="value-flex">
+                <div class="value-flex" >
                   <p>R$ <strong class="size">39,90</strong></p>
                   <p>mensalmente</p>
                 </div>
                 <button
                 id="basicPlan"
-                  class="plansSubscribe pSub-white"
-                >
+                  class="plansSubscribe pSub-white">
                   Assinar
                 </button>
 
@@ -331,67 +329,68 @@
 <div class="plans-container-main">
   <h1 class="plans-title">Planos</h1>
 
-  <div class="plans-container">
-    <div class="container-planos">
-      <div class="container-planos-text">
-        <div class="planos-maininfo">
-          <h2>Basic</h2>
-          <p>Tudo o que você precisa para começar com uma IA poderosa e sem censura.</p>
+  <div class="plans-container-main" id="planosSection">
+    <h1 class="plans-title">Planos</h1>
+    <div class="plans-container">
+      <div class="container-planos">
+        <div class="container-planos-text">
+          <div class="planos-maininfo">
+            <h2>Basic</h2>
+            <p>Tudo o que você precisa para começar com uma IA poderosa e sem censura.</p>
+          </div>
+          <div class="plans-featbenf">
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (4).png" alt="">
+              <p>Interações 100% anônimas</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (5).png" alt="">
+              <p>Respostas poderosas sem censura</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (6).png" alt="">
+              <p>5 prompts / dia</p>
+            </div>
+          </div>
         </div>
-        <div class="plans-featbenf">
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Vector (4).png" alt="">
-            <p>Interações 100% anônimas</p>
+        <div class="value">
+          <div class="value-flex">
+            <p>R$ <strong class="size">39,90</strong></p>
+            <p>mensalmente</p>
           </div>
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Vector (5).png" alt="">
-            <p>Respostas poderosas sem censura</p>
-          </div>
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Vector (6).png" alt="">
-            <p>5 prompts / dia</p>
-          </div>
-        </div>
-      </div>
-      <div class="value">
-        <div class="value-flex">
-          <p>R$ <strong class="size">39,90</strong></p>
-          <p>mensalmente</p>
-        </div>
-        <button class="plansSubscribe pSub-white"  >Assinar</button>
-
-  </div>
-    </div>
-    <div class="container-planos planoDestaque">
-      <div class="container-planos-text">
-        <div class="planos-maininfo">
-          <h2>Gold</h2>
-          <p>Ideal para usuários frequentes que precisam de mais dados e flexibilidade.</p>
-        </div>
-        <div class="plans-featbenf">
-          <p>Tudo do Basic +</p>
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Vector (6).png" alt="">
-            <p>100 prompts / dia</p>
-          </div>
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Clip path group.png" alt="">
-            <p>Consulta de dados CPF, Placas</p>
-          </div>
-          <div class="icon-flex">
-            <img src="../../../../assets/icons/Vector (7).png" alt="">
-            <p>Suporte prioritário</p>
-          </div>
+          <button class="plansSubscribe pSub-white" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP4O1P'" >Assinar</button>
         </div>
       </div>
-      <div class="value">
-        <div class="value-flex">
-          <p>R$ <strong class="size">89,90</strong></p>
-          <p>mensalmente</p>
+      <div class="container-planos planoDestaque">
+        <div class="container-planos-text">
+          <div class="planos-maininfo">
+            <h2>Gold</h2>
+            <p>Ideal para usuários frequentes que precisam de mais dados e flexibilidade.</p>
+          </div>
+          <div class="plans-featbenf">
+            <p>Tudo do Basic +</p>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (6).png" alt="">
+              <p>100 prompts / dia</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Clip path group.png" alt="">
+              <p>Consulta de dados CPF, Placas</p>
+            </div>
+            <div class="icon-flex">
+              <img src="../../../../assets/icons/Vector (7).png" alt="">
+              <p>Suporte prioritário</p>
+            </div>
+          </div>
         </div>
-        <button class="plansSubscribe pSub-highlight">Assinar</button>
+        <div class="value">
+          <div class="value-flex">
+            <p>R$ <strong class="size">89,90</strong></p>
+            <p>mensalmente</p>
+          </div>
+          <button class="plansSubscribe pSub-highlight" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP4O1Q'">Assinar</button>
+        </div>
       </div>
-    </div>
       <div class="container-planos">
         <div class="container-planos-text">
           <div class="planos-maininfo">
@@ -415,69 +414,99 @@
           </div>
         </div>
         <div class="value">
-          <button class="plansSubscribe pSub-black">Aplicar</button>
+          <button class="plansSubscribe pSub-black" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP5530'">Aplicar</button>
         </div>
       </div>
+    </div>
   </div>
 </div>
 <div class="faq-container-main">
   <h1 class="faq-title">Perguntas Frequentes</h1>
 
+  <!-- Pergunta 1 -->
   <div class="faq-item">
-      <button class="faq-question">Quantas mensagens eu recebo gratuitamente em uma conta normal? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Você recebe um número limitado de mensagens gratuitas por mês em uma conta normal.</p>
-      </div>
+    <button class="faq-question">
+      Quantas mensagens eu recebo gratuitamente em uma conta normal?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Você recebe um número limitado de mensagens por mês com uma conta gratuita. Para obter mensagens ilimitadas, considere fazer o upgrade para uma conta Pro.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 2 -->
   <div class="faq-item">
-      <button class="faq-question">Se eu precisar de suporte, como faço para entrar em contato com vocês? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Nosso suporte está disponível através do e-mail ou chat ao vivo no site.</p>
-      </div>
+    <button class="faq-question">
+      Se eu precisar de suporte, como faço para entrar em contato com vocês?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Para suporte, entre em contato conosco pelo nosso e-mail de suporte em contact@obizilla.xyz ou pela seção de suporte no nosso site.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 3 -->
   <div class="faq-item">
-      <button class="faq-question">Que tipo de modelo vocês estão usando? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Estamos usando um modelo de linguagem avançado desenvolvido para conversas naturais.</p>
-      </div>
+    <button class="faq-question">
+      Que tipo de modelo vocês estão usando?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Usamos um modelo de linguagem personalizado baseado na arquitetura GPT, mas sem as restrições clássicas.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 4 -->
   <div class="faq-item">
-      <button class="faq-question">O que uma conta Pro oferece? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Uma conta Pro oferece benefícios adicionais, como mais prompts e acesso prioritário.</p>
-      </div>
+    <button class="faq-question">
+      O que uma conta Pro oferece?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Uma conta Pro oferece mensagens ilimitadas, suporte prioritário e acesso a recursos premium.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 5 -->
   <div class="faq-item">
-      <button class="faq-question">Como ficar atualizado com a equipe do Obizilla? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Para se manter atualizado, você pode seguir nossos canais de comunicação e redes sociais.</p>
-      </div>
+    <button class="faq-question">
+      Como ficar atualizado com a equipe do Obizilla?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Fique atualizado com a equipe do Obizilla seguindo nossas redes sociais.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 6 -->
   <div class="faq-item">
-      <button class="faq-question">Assinatura sem preocupações / Cancelamentos <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Oferecemos uma política de cancelamento fácil e sem preocupações. Você pode cancelar a qualquer momento.</p>
-      </div>
+    <button class="faq-question">
+      Assinatura sem preocupações / Cancelamentos
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Cancele a qualquer momento através do portal de gerenciamento da Stripe ou enviando um e-mail para contact@obizilla.xyz.</p>
+    </div>
   </div>
 
+  <!-- Pergunta 7 -->
   <div class="faq-item">
-      <button class="faq-question">Quais são os métodos de pagamento aceitos? <img src="./assets/caret-down-dark.svg fill.png" alt=""></button>
-      <div class="faq-answer">
-          <p>Aceitamos vários métodos de pagamento, incluindo cartões de crédito e PayPal.</p>
-      </div>
+    <button class="faq-question">
+      Quais são os métodos de pagamento aceitos?
+      <img class="caret" src="./assets/caret-down-dark.svg fill.png" alt="Seta para baixo">
+    </button>
+    <div class="faq-answer">
+      <p>Métodos de pagamento: Cartão, PIX e boleto.</p>
+    </div>
   </div>
 </div>
+
 
 <div class="start-card">
   <div class="start-content">
       <h2>Começar</h2>
       <p>Pergunte literalmente o que você quiser</p>
-      <button class="start-button">Começar</button>
+      <button class="start-button"onclick="window.location.href='https://www.obizilla.xyz/login'">Começar</button>
   </div>
   <div class="start-image-placeholder">
     <img src="./assets/Frame 50.png" alt="">
@@ -502,8 +531,45 @@
   <hr class="footer-divider">
 </div>
 </footer>
+<script>
+function smoothScroll(target, duration) {
+  var targetPosition = target.getBoundingClientRect().top;
+  var startPosition = window.pageYOffset;
+  var distance = targetPosition;
+  var startTime = null;
 
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    var timeElapsed = currentTime - startTime;
+    var run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+document.getElementById('planosButton').addEventListener('click', function() {
+  var target = document.getElementById('planosSection');
+  smoothScroll(target, 1000); // 2000ms = 2 seconds
+});
+
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const faqItem = question.closest('.faq-item');
+      faqItem.classList.toggle('open');
+    });
+  });
+</script>
   </body>
+
 
   <script
     type="module"

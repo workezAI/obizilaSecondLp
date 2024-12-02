@@ -1171,7 +1171,6 @@ button {
 }
 
 .faq-answer {
-  max-height: 0;
   overflow: hidden;
   transition: max-height 0.3s ease;
   padding: 0 15px;
@@ -1347,4 +1346,28 @@ button {
 
 .footer-links a:hover {
   color: #ffffff;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  background-color: #000000;
+  font-size: 1rem;
+  margin-top: 5px;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.caret {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 500px; /* Ajuste conforme necessário */
+  padding: 15px;
+}
+
+.faq-item.open .caret {
+  transform: rotate(180deg);
 }
