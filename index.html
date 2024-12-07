@@ -328,7 +328,7 @@
 
 <div class="plans-container-main">
 
-  <div class="plans-container-main" id="planosSection">
+   <div class="plans-container-main" id="planosSection">
     <h1 class="plans-title">Planos</h1>
     <div class="plans-container">
       <div class="container-planos">
@@ -357,7 +357,7 @@
             <p>R$ <strong class="size">39,90</strong></p>
             <p>mensalmente</p>
           </div>
-          <button class="plansSubscribe pSub-white" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP4O1P'" >Assinar</button>
+          <button class="plansSubscribe pSub-white" data-url="https://go.perfectpay.com.br/PPU38CP4O1P">Assinar</button>
         </div>
       </div>
       <div class="container-planos planoDestaque">
@@ -387,7 +387,7 @@
             <p>R$ <strong class="size">89,90</strong></p>
             <p>mensalmente</p>
           </div>
-          <button class="plansSubscribe pSub-highlight" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP4O1Q'">Assinar</button>
+          <button class="plansSubscribe pSub-highlight" data-url="https://go.perfectpay.com.br/PPU38CP4O1Q">Assinar</button>
         </div>
       </div>
       <div class="container-planos">
@@ -413,11 +413,36 @@
           </div>
         </div>
         <div class="value">
-          <button class="plansSubscribe pSub-black" onclick="window.location.href='https://go.perfectpay.com.br/PPU38CP5530'">Aplicar</button>
+          <button class="plansSubscribe pSub-black" data-url="https://go.perfectpay.com.br/PPU38CP5530">Aplicar</button>
         </div>
       </div>
     </div>
   </div>
+  <script>
+function buildCheckoutUrl(baseUrl) {
+  const params = new URLSearchParams({
+    utm_source: 'source_value',
+    utm_medium: 'medium_value',
+    utm_campaign: 'campaign_value',
+    utm_term: 'term_value',
+    utm_content: 'content_value',
+    userQuestions: JSON.stringify(userQuestions),
+    aiResponses: JSON.stringify(aiResponses),
+    ai_mode: ai_mode,
+    questionCount: localStorage.getItem('questionCount')
+  });
+  return `${baseUrl}?${params.toString()}`;
+}
+
+document.querySelectorAll('.plansSubscribe').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    const baseUrl = this.getAttribute('data-url');
+    const checkoutUrl = buildCheckoutUrl(baseUrl);
+    window.location.href = checkoutUrl;
+  });
+});
+  </script>
 </div>
 <div class="faq-container-main">
   <h1 class="faq-title">Perguntas Frequentes</h1>
